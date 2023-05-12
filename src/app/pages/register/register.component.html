@@ -1,0 +1,44 @@
+<div class="form-container">
+    <h2>Novo Carro</h2>
+    
+    <div style="background-color: #b0e7b0;" class="popup-container" *ngIf="showPopup">
+      <div class="popup">
+        <p style="background-color: #b0e7b0; color: black; font-size: bold;">{{ popupMessage }}</p>
+      </div>
+    </div>
+
+    <form #carForm="ngForm" (ngSubmit)="submitForm(carForm.value)">
+      <label for="marca">Marca:</label>
+      <input type="text" id="marca" name="marca" [(ngModel)]="car.marca" required>
+  
+      <label for="modelo">Modelo:</label>
+      <input type="text" id="modelo" name="modelo" [(ngModel)]="car.modelo" required>
+  
+      <label for="cor">Cor:</label>
+      <input type="text" id="cor" name="cor" [(ngModel)]="car.cor" required>
+
+      <label for="combustivel">Combustível:</label>
+      <select id="combustivel" name="combustivel" [(ngModel)]="car.combustivel" required>
+        <option value="Flex">Flex</option>
+        <option value="Diesel">Diesel</option>
+        <option value="Gasolina">Gasolina</option>
+      </select>
+  
+      <label for="preco">Preço:</label>
+      <input type="text" id="preco" name="preco" [(ngModel)]="car.preco" required>
+  
+      <label for="ano">Ano:</label>
+      <input type="number" id="ano" name="ano" [(ngModel)]="car.ano" required>
+  
+      <label for="portas">Número de portas:</label>
+      <select id="portas" name="portas" [(ngModel)]="car.portas" required>
+        <option value="2">2</option>
+        <option value="4">4</option>
+      </select>
+  
+      <label for="imagem">Imagem:</label>
+      <input type="text" id="imagem" name="imagem" [(ngModel)]="car.imagem" required>
+  
+      <button type="submit" [disabled]="carForm.invalid">Enviar</button>
+    </form>
+  </div>

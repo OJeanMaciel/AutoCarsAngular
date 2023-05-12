@@ -1,0 +1,21 @@
+<app-sidebar></app-sidebar>
+<div class="container">  
+  <h2 class="title_stock">Sua melhor Opção!</h2>
+  <ul>
+    <li *ngFor="let car of cars | paginate: { itemsPerPage: 12, currentPage: pageNumber }">
+      <img [src]="car.imagem" alt="{{ car.marca }} {{ car.modelo }}">
+      <span>
+        Marca: {{ car.marca }} 
+      </span>
+      <span>
+        Modelo: {{ car.modelo }}
+      </span>
+      <span>
+        Preço: {{ car.preco | currency:'BRL':'symbol' }} 
+      </span>
+      <button class="btn_details" [routerLink]="['/carlist', car.id]">Detalhes</button>
+    </li>
+  </ul>
+  
+  <pagination-controls class="custom-pagination" (pageChange)="pageNumber = $event"></pagination-controls>
+</div>

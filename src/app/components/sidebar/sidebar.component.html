@@ -1,0 +1,40 @@
+<div class="sidebar">
+  <ul>
+    <li>
+      <select [(ngModel)]="selectedMarca" (change)="filtrarPorMarca()">
+        <option>Selecione uma marca</option>
+        <option *ngFor="let marca of marcasUnicas">{{ marca }}</option>
+      </select>
+    </li>    
+    <li>
+      <select [disabled]="!selectedMarca" [(ngModel)]="selectedModelo" (change)="filtrarPorModelo()">
+        <option>Selecione um modelo</option>
+        <option *ngFor="let modelo of modeloUnico">{{ modelo }}</option>
+      </select>
+    </li>
+    <li>
+      <select [disabled]="!selectedModelo" [(ngModel)]="selectedCor" (change)="filtrarPorCor()">
+        <option>Selecione uma cor</option>
+        <option *ngFor="let cor of corUnica">{{ cor }}</option>
+      </select>
+    </li>
+    <li>
+      <select [disabled]="!selectedCor" [(ngModel)]="selectedCombustivel" (change)="filtrarPorCombustivel()">
+        <option>Selecione o tipo de combustível</option>
+        <option *ngFor="let combustivel of combustivelUnico">{{ combustivel }}</option>
+      </select>
+    </li>
+    <li>
+      <select [disabled]="!selectedCombustivel" [(ngModel)]="selectedAno" (change)="filtrarPorAno()">
+        <option>Selecione o ano</option>
+        <option *ngFor="let ano of carAno">{{ ano }}</option>
+      </select>
+    </li>
+  </ul>
+  <button class="btn_filter" [disabled]="!selectedMarca" routerLink="carfilters" (click)="buscar()">Filtrar</button>
+
+  <div class="contact">
+    <p>Segue meu GitHub</p>
+    <a href="https://github.com/OJeanMaciel" target="_blank"><i class="fab fa-github"></i></a>
+  </div>
+</div>

@@ -1,0 +1,100 @@
+.container {
+    margin-top: 105px;
+    color: white;
+    
+    h2 {
+        text-align: center;
+        font-size: 24px;
+        margin-left: 330px;
+        margin-top: 25px;
+      }
+
+      .promotion_car{
+        background-image: linear-gradient(to right, #f15d07, #cf4f05, #ff5f6d, #ffc371, #fccc88);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      select {
+        font-size: 24px;
+        margin-left: 360px;
+        margin-top: 25px;
+
+        width: 300px;
+        height: 35px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+        background-color: #fff;
+        transition: border-color 0.3s ease-in-out;
+    
+        option {
+          background-color: #eee7e7;
+          font-size: bold;
+          border: none;
+        }
+      }
+      
+      ul {
+        margin-top: 25px;
+        margin-left: 330px;
+      }
+      
+      li {
+        display: inline-grid;
+        align-items: flex-start;
+        padding-left: 15px;
+        margin-bottom: 20px;
+        list-style-type: none;
+        
+        img {
+            width: 300px;
+            height: 200px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            padding-left: 15px;
+            
+            border-radius: 10px;
+        }
+
+        span {
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: bold;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        ul {
+          column-count: 1;
+        }
+      }
+      
+      @media only screen and (min-width: 768px) and (max-width: 1199px) {
+        ul {
+          column-count: 2;
+        }
+      }
+      
+      @media only screen and (min-width: 1200px) {
+        ul {
+          column-count: 4;
+        }
+      }
+
+      .btn_details{ 
+        height: 40px;
+        border-radius: 5px;
+        margin-top: 15px;
+        border-color: black;
+        color: white;
+        border-color: #cf4f05;
+        background-color: #10085d; 
+      }
+
+      .btn_details:hover {
+        cursor: pointer;
+        border-color: aqua;
+      }
+}

@@ -1,0 +1,36 @@
+<app-sidebar></app-sidebar>
+<div class="container" *ngIf="car">
+  <h2>Aproveite esse Super Carro</h2>
+
+  <div style="background-color: #b0e7b0;" class="popup-container" *ngIf="showPopup">
+    <div class="popup">
+      <p style="background-color: #b0e7b0; color: black; font-size: bold;">{{ popupMessage }}</p>
+    </div>
+  </div>
+
+  <ul>
+    <img [src]="car.imagem" alt="{{ car.marca }} {{ car.modelo }}">
+    <li>Marca: {{ car.marca }}</li>
+    <li>Modelo: {{ car.modelo }}</li>
+    <li>Cor: {{ car.cor }}</li>
+    <li>Combustível: {{ car.combustivel }}</li>
+    <li>Preço: {{ car.preco | currency:'BRL':'symbol' }}</li>
+    <li>Ano: {{ car.ano }}</li>
+    <li>Portas: {{ car.portas }}</li>
+
+    <button style="background-color: rgb(255, 0, 0);" (click)="deletar()">Deletar</button>
+    <button style="background-color: #cf4f05;" (click)="editar()">Editar</button>
+  </ul>
+
+  <div class="info-contact">
+    <h3>Contatos</h3>
+    <a href="https://wa.me/SEU_NUMERO_DE_TELEFONE"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.instagram.com/SEU_USUARIO_DO_INSTAGRAM/"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/SEU_USUARIO_DO_FACEBOOK/"><i class="fab fa-facebook"></i></a>
+  </div>
+
+  <ng-container *ngIf="showModal">
+    <app-modal-edit [showModal]="showModal">
+    </app-modal-edit>
+  </ng-container>
+</div>

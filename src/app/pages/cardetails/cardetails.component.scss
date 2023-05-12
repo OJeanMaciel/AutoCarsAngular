@@ -1,0 +1,115 @@
+.container {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin-left: 190px;
+  
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      margin-bottom: 30px;
+            
+      background-image: linear-gradient(to right, #f15d07, #cf4f05, #ff5f6d, #ffc371, #fccc88);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  
+      img {
+        width: 450px;
+        height: 300px;
+        height: auto;
+        margin-bottom: 20px;
+        border-radius: 15px;
+      }
+  
+      li {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      button {
+        height: 50px; 
+        width: 100px; 
+        border-radius: 5px; 
+        background-color: red; 
+        margin-top: 10px; 
+        margin-left: 20px; 
+        color: #fff;
+      }
+
+      button:hover {
+        cursor: pointer;
+
+        height: 55px; 
+        width: 110px;
+        transition: 105ms;
+
+        border-color: aqua;
+      }
+    }
+
+    .info-contact {
+        margin-top: 35px;
+        color: #cf4f05;
+        
+        a {
+          margin-top: 15px;
+          padding-left: 25px;
+          display: inline-block;
+          margin-right: 10px;
+          font-size: 36px;
+        }
+        
+        .fa-whatsapp {
+          color: #25D366;
+        }
+
+        .fa-whatsapp:hover {
+          font-size: 56px;
+          transition: 1s;
+        }
+        
+        .fa-instagram {
+          color: #C13584;
+        }
+
+        .fa-instagram:hover {
+          font-size: 56px;
+          transition: 1s;
+        }
+        
+        .fa-facebook {
+          color: #1877F2;
+        }
+
+        .fa-facebook:hover {
+          font-size: 56px;
+          transition: 1s;
+        }
+      }
+
+      .popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+        width: 300px;
+        padding: 20px;
+        background-color: #b0e7b0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        text-align: center;
+      }
+      
+  }
+  

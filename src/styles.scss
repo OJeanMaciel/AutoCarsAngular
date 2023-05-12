@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+    background-color: #000034;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .custom-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .custom-pagination .ngx-pagination li {
+    color: #fff;
+    margin-right: 5px;
+    padding: 3px 8px;
+    background-color: rgba(41, 39, 39, 0.3);
+    border: 1px solid #cf4f05;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    a {
+      color: white;
+      background-color: transparent;
+    }
+  }
+  
+  .custom-pagination .ngx-pagination li.active {
+    background-color: #10085d;
+    border-color: #007bff;
+  }
+  
+  .custom-pagination .ngx-pagination li.disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+  
+  .custom-pagination .ngx-pagination li:hover {
+    background-color: #10085d;
+    border-color: #007bff;
+  }

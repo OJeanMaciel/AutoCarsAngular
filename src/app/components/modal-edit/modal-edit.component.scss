@@ -1,0 +1,97 @@
+.modal {
+    background: #10085d;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #cf4f05;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    p {        
+    color: #cf4f05;
+    font-size: 24px;
+    font-size: bold;
+    }
+  
+    .form-container {
+      max-width: 800px;
+      height: 100%;
+      margin: 0;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+  
+      label,
+      input,
+      select {
+        display: inline-block;
+        width: 150px;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+  
+      input,
+      select {
+        background-color: #ccc;
+        width: calc(100% - 150px);
+        height: 50px;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+  
+      select {
+        height: 50px;
+        padding: 8px;
+      }
+  
+      option {
+        background-color: #ccc;
+      }
+  
+      button {
+        background-color: black;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        border-color: #cf4f05;
+        font-size: 16px;
+        cursor: pointer;
+  
+        &:disabled {
+          background-color: #ccc;
+          cursor: not-allowed;
+        }
+  
+        &:hover {
+          border-color: aqua;
+          border-radius: 5px;
+        }
+      }
+
+      .btn_edit_vehicle {
+        display: flex; 
+        justify-content: space-between; 
+        padding-right: 20px;
+
+        button {
+            width: 100px;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+      }
+    }
+  }
+  
