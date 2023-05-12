@@ -1,27 +1,18 @@
-# AutoCars
+Bem-vindo ao ReadMe do Auto-Cars!
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
+Este projeto é uma aplicação web que consome uma API RESTful construída com Spring e exibe informações sobre diferentes modelos de carros. Ele foi desenvolvido usando tecnologias de frontend modernas, como Angular, HTML, CSS e JavaScript, e tem como objetivo fornecer uma experiência de usuário agradável e informativa.
 
-## Development server
+# 📝 Configurações: Start do Projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Run: npm run start
 
-## Code scaffolding
+# 🚦 API Docs
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Baixe ou clone o repositório da API de carros do Spring em seu ambiente de desenvolvimento.
+2. Inicie o servidor da API de carros do Spring, seguindo as instruções contidas no README do projeto.
+3. Configure o arquivo de ambiente da aplicação de frontend de carros para apontar para a URL da API de carros do Spring.
+4. Inicie a aplicação de frontend de carros, seguindo as instruções contidas no README do projeto.
 
-## Build
+# 💬 Estamos aqui para ajudar!
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Estamos felizes por ter você por aqui!
